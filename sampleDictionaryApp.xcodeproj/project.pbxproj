@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0496DCF71D5F0A2F00D92AA8 /* dic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0496DCF61D5F0A2F00D92AA8 /* dic.png */; };
+		0496DCF91D5F0D4F00D92AA8 /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 0496DCF81D5F0D4F00D92AA8 /* img.png */; };
 		04C5FF101CB7EBC200DD5F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5FF0F1CB7EBC200DD5F5A /* AppDelegate.swift */; };
 		04C5FF121CB7EBC200DD5F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5FF111CB7EBC200DD5F5A /* ViewController.swift */; };
 		04C5FF151CB7EBC200DD5F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C5FF131CB7EBC200DD5F5A /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0496DCF61D5F0A2F00D92AA8 /* dic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dic.png; sourceTree = "<group>"; };
+		0496DCF81D5F0D4F00D92AA8 /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 		04C5FF0C1CB7EBC200DD5F5A /* sampleDictionaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleDictionaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C5FF0F1CB7EBC200DD5F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C5FF111CB7EBC200DD5F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +80,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0496DCF51D5F0A2F00D92AA8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0496DCF81D5F0D4F00D92AA8 /* img.png */,
+				0496DCF61D5F0A2F00D92AA8 /* dic.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		04C5FF031CB7EBC100DD5F5A = {
 			isa = PBXGroup;
 			children = (
+				0496DCF51D5F0A2F00D92AA8 /* Assets */,
 				04C5FF0E1CB7EBC200DD5F5A /* sampleDictionaryApp */,
 				04C5FF261CB7EBC200DD5F5A /* sampleDictionaryAppTests */,
 				04C5FF311CB7EBC200DD5F5A /* sampleDictionaryAppUITests */,
@@ -232,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0496DCF91D5F0D4F00D92AA8 /* img.png in Resources */,
 				04C5FF1D1CB7EBC200DD5F5A /* LaunchScreen.storyboard in Resources */,
 				04C5FF1A1CB7EBC200DD5F5A /* Assets.xcassets in Resources */,
+				0496DCF71D5F0A2F00D92AA8 /* dic.png in Resources */,
 				04C5FF151CB7EBC200DD5F5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +504,7 @@
 				04C5FF391CB7EBC200DD5F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04C5FF3A1CB7EBC200DD5F5A /* Build configuration list for PBXNativeTarget "sampleDictionaryAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +513,7 @@
 				04C5FF3C1CB7EBC200DD5F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04C5FF3D1CB7EBC200DD5F5A /* Build configuration list for PBXNativeTarget "sampleDictionaryAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				04C5FF3F1CB7EBC200DD5F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

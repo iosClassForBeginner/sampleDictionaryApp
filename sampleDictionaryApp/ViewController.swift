@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController, UITextFieldDelegate
+{
+    @IBOutlet var txtf: UITextField!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        txtf.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        
+        let dv = UIReferenceLibraryViewController(term: "\(textField.text!)")
+        self.presentViewController(dv, animated: false, completion: nil)
+        
+        return true
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-
